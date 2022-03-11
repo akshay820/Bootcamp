@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/JavaScript"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnShow").attr('disabled',true);
+
+            $("#btnShow").click(function(){
+                if(confirm("Are you sure...?")){
+                    $("#mainDiv").show(2000);
+                    $(this).attr('disabled',true);
+                    $("#btnHide").attr('disabled',false);
+                    $("#btnToggle").text("Hide")
+                }
+            })
+            $("#btnHide").click(function(){
+                if(confirm("Are you sure...?")){
+                    $("#mainDiv").hide(2000);
+                    $(this).attr('disabled',true);
+                    $("#btnShow").attr('disabled',false);
+                    $("#btnToggle").text("Show")
+                }
+
+            })
+            $("#btnToggle").click(function(){
+                ($(this).text()=="Hide")
+                ?($(this).text("Show"),($("#mainDiv").hide(2000)),($("#btnShow").attr('disabled',false)),($("#btnHide").attr('disabled',true)))
+                :($(this).text("Hide"),($("#mainDiv").show(2000)),($("#btnShow").attr('disabled',true)),($("#btnHide").attr('disabled',false)))
+            })
+            $("#btnPlus").click(function(){
+                var div_height = parseInt($("#mainDiv").css('height'));
+				var div_width = parseInt($("#mainDiv").css('width'));
+				if(div_height <= 500){
+                    div_height += 10;
+                    div_width += 10;
+                    $("#mainDiv").css('height',div_height);
+                    $("#mainDiv").css('width',div_width);
+                }
+                else{
+                    alert("More than 500px is not possible..!!");
+                }                
+            })
+            $("#btnMinus").click(function(){
+                var div_height = parseInt($("#mainDiv").css("height"));
+                var div_width = parseInt($("#mainDiv").css("width"));
+                if(div_height >= 20){
+                    div_height -= 10;
+                    div_width -= 10;
+                    $("#mainDiv").css('height',div_height);
+                    $("#mainDiv").css('width',div_width);
+                }
+                else{
+                    alert("Less than 20px is not possible");
+                }
+            })
+        })
+        
+        $(document).ready(function(){
+            $("#textFocus").focus(function(){
+                $(this).css("background-color","Blue")
+            })
+            $("#textBlur").blur(function(){
+                $(this).css("background-color","Black")
+            })
+            $("#keyPress").keypress(function(){
+                alert($(this).val());
+            })
+            $("#keyUp").keyup(function(){
+                alert($(this).val());
+            })
+        })
+
+
+        $(document).ready(function(){
+            $("#btn_fade_out").attr("disabled",true);
+
+            $("#btn_fade_in").click(function(){
+                if(confirm("Are you sure...?")){
+                    $("#divBlue").fadeIn(1000);
+                    $("#divGreen").fadeIn(2000);
+                    $("#divRed").fadeIn(3000);
+                    $("#btn_fade_out").attr("disabled",false);
+                    $(this).attr("disabled",true);
+                }
+            })
+            $("#btn_fade_out").click(function(){
+                if(confirm("Are you sure...?")){
+                    $("#divBlue").fadeOut(1000);
+                    $("#divGreen").fadeOut(2000);
+                    $("#divRed").fadeOut(3000);
+                    $("#btn_fade_in").attr("disabled",false);
+                    $(this).attr("disabled",true);
+                }
+            })
+            $("#Btn_fade_toggle").click(function(){
+					if(confirm("Are You Sure..??"))
+					{
+						$("#divBlue").fadeToggle(1000);
+						$("#divGreen").fadeToggle(2000);
+						$("#divRed").fadeToggle(3000);
+                    }
+				});
+
+})
+    
+    
+    </script>
+</head>
+<body>
+    <div id="mainDiv" style="height: 200px;width: 200px;background-color: blue;" ></div>
+    <hr/>
+    <button id="btnShow">Show</button>
+    <button id="btnHide">Hide</button>
+    <hr/>
+    <button id="btnToggle">Hide</button>
+    <hr/>
+    <button id="btnPlus">+</button>
+    <button id="btnMinus">-</button>
+    <hr/>
+
+</head>
+<body>
+    <input type="text" id="textFocus" placeholder="Focus Event"><hr/>
+    <input type="text" id="textBlur" placeholder="Blur Event"><hr/>
+    <input type="text" id="keyPress" placeholder="Key Press Event"><hr/>
+    <input type="text" id="keyUp" placeholder="Key Up Event">
+</body>
+<hr>
+
+<button id="btn_fade_in">Fade In</button>
+<button id="btn_fade_out">Fade Out</button>
+<button id="Btn_fade_toggle">Fade In/Out Toggle</button>
+<div style="height: 100px;width: 100px;display: none; background-color: blue;" id="divBlue"></div><br>
+<div style="height: 100px;width: 100px;display: none; background-color: green;" id="divGreen"></div><br>
+<div style="height: 100px;width: 100px;display: none; background-color: red;" id="divRed"></div><br>
+</body>
+</html>

@@ -1,0 +1,14 @@
+E:\RESEARCH\Web Training\ModelClassCollectionList\ModelClassCollectionList\bin\Debug\ModelClassCollectionList.exe.config
+E:\RESEARCH\Web Training\ModelClassCollectionList\ModelClassCollectionList\bin\Debug\ModelClassCollectionList.exe
+E:\RESEARCH\Web Training\ModelClassCollectionList\ModelClassCollectionList\bin\Debug\ModelClassCollectionList.pdb
+E:\RESEARCH\Web Training\ModelClassCollectionList\ModelClassCollectionList\obj\Debug\ModelClassCollectionList.csprojAssemblyReference.cache
+E:\RESEARCH\Web Training\ModelClassCollectionList\ModelClassCollectionList\obj\Debug\ModelClassCollectionList.csproj.CoreCompileInputs.cache
+E:\RESEARCH\Web Training\ModelClassCollectionList\ModelClassCollectionList\obj\Debug\ModelClassCollectionList.exe
+E:\RESEARCH\Web Training\ModelClassCollectionList\ModelClassCollectionList\obj\Debug\ModelClassCollectionList.pdb
+D:\Study\Dotnet\ModelClassCollectionList\ModelClassCollectionList\bin\Debug\ModelClassCollectionList.exe.config
+D:\Study\Dotnet\ModelClassCollectionList\ModelClassCollectionList\bin\Debug\ModelClassCollectionList.exe
+D:\Study\Dotnet\ModelClassCollectionList\ModelClassCollectionList\bin\Debug\ModelClassCollectionList.pdb
+D:\Study\Dotnet\ModelClassCollectionList\ModelClassCollectionList\obj\Debug\ModelClassCollectionList.csproj.AssemblyReference.cache
+D:\Study\Dotnet\ModelClassCollectionList\ModelClassCollectionList\obj\Debug\ModelClassCollectionList.csproj.CoreCompileInputs.cache
+D:\Study\Dotnet\ModelClassCollectionList\ModelClassCollectionList\obj\Debug\ModelClassCollectionList.exe
+D:\Study\Dotnet\ModelClassCollectionList\ModelClassCollectionList\obj\Debug\ModelClassCollectionList.pdb
